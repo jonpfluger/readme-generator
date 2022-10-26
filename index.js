@@ -60,14 +60,12 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-}
+// function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
 function init() {
     inquirer.prompt(questions).then(function(data) {
-        fs.writeFileSync("README3.md", generateMarkdown(data))
+        fs.writeFileSync("README.md", generateMarkdown(data))
     })
 }
 
